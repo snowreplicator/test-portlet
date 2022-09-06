@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    compileOnly group: "com.liferay.portal", name: "release.portal.api"
+
+    compileOnly project(":modules:test-portlet:test-portlet-api")
+}
+
+
+buildService {
+    apiDir = "../test-portlet-api/src/main/java"
+    osgiModule = true
+    propsUtil = "com.snowreplicator.test.service.util.PropsUtil"
+    databaseNameMaxLength = 100
+    //testDir = "src/java/test"
+}
