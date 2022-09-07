@@ -10,7 +10,7 @@ dependencies {
     compileOnly project(":modules:test-portlet:test-portlet-api")
 }
 
-
 buildService {
     apiDir = "../test-portlet-api/src/main/java"
 }
+

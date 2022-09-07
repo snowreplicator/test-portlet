@@ -9,7 +9,3 @@ dependencies {
 
     compileOnly project(":modules:test-portlet:test-portlet-api")
 }
-
-configurations {
-    jar.archiveName = jar.baseName + '.jar'
-}
