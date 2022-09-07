@@ -1,4 +1,11 @@
-Bundle-SymbolicName: test-portlet-api
+Bundle-Name: test-portlet-api
+Bundle-SymbolicName: com.snowreplicator.test.api
 Bundle-Version: 1.0.0
 Export-Package: \
-    com.snowreplicator.test.constants
+    com.snowreplicator.test.constants, \
+    com.snowreplicator.test.exception, \
+    com.snowreplicator.test.model, \
+    com.snowreplicator.test.service, \
+    com.snowreplicator.test.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../test-portlet-service/service.xml

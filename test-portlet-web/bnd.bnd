@@ -1,2 +1,3 @@
-Bundle-SymbolicName: test-portlet-web
+Bundle-Name: test-portlet-web
+Bundle-SymbolicName: com.snowreplicator.test.web
 Bundle-Version: 1.0.0

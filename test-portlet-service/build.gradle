@@ -13,8 +13,4 @@ dependencies {
 
 buildService {
     apiDir = "../test-portlet-api/src/main/java"
-    osgiModule = true
-    propsUtil = "com.snowreplicator.test.service.util.PropsUtil"
-    databaseNameMaxLength = 100
-    //testDir = "src/java/test"
 }

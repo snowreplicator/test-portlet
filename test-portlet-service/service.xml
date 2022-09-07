@@ -1,19 +1,10 @@
 <?xml version="1.0"?>
-<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
 
-<!--
 <service-builder dependency-injector="ds" package-path="com.snowreplicator.test">
--->
-<service-builder package-path="com.snowreplicator.test">
-    <author>Snow Replicator</author>
-    <namespace>tst</namespace>
-    <!--
-    <entity name="SomeTable" table="planner.tst_SomeTable" local-service="true" remote-service="true" uuid="true">
-    -->
-    <!--
-    <entity name="SomeTable" table="planner.tst_SomeTable" local-service="true" remote-service="false" uuid="true">
-    -->
-    <entity name="SomeTable" table="planner.tst_SomeTable" local-service="true" remote-service="false" uuid="false">
+	<namespace>tst</namespace>
+
+    <entity name="SomeTable" table="snowrepl.tst_SomeTable" local-service="true" remote-service="true" uuid="false">
         <column name="id" primary="true" type="long" />
         <column name="groupId" type="long" />
         <column name="someText" type="String" />
