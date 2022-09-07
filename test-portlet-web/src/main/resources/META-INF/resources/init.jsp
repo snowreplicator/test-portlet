@@ -9,6 +9,12 @@
 <%@ taglib uri="http://liferay.com/tld/util" prefix="liferay-util" %>
 
 <%@ page import="com.liferay.portal.kernel.util.ParamUtil" %>
+<%@ page import="com.liferay.portal.kernel.util.HtmlUtil" %>
+
+<%@ page import="com.snowreplicator.test.model.SomeTable" %>
+<%@ page import="com.snowreplicator.test.web.portlet.ActionUtil" %>
+
+<%@ page import="java.util.List" %>
 
 <liferay-theme:defineObjects />
 
